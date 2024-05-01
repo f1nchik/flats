@@ -37,8 +37,11 @@ commentRight.onclick = function (event) {
     setTimeout(() => {
         activePair.classList.remove('active')
         nextPair.classList.add('active')
-        nextPair.style.opacity = 1
-    }, 300);
+        setTimeout(() => {
+            
+            nextPair.style.opacity = 1
+        }, 100);
+    }, 600);
 }
 commentLeft.onclick = function (event) {
     event.preventDefault();
